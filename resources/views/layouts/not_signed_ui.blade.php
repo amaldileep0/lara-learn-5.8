@@ -22,10 +22,10 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('css/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('css/plugins/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
 
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">

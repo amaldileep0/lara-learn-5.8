@@ -97,6 +97,7 @@
          </footer>
       </div>
       <script src="{{ asset('js/app.js') }}" defer></script>
+      <script src="{{ asset('plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}" defer></script>
       @yield('pagescript')
    </body>
 </html>
