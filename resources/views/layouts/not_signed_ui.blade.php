@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 <body class="hold-transition login-page">
-    <div class="login-box">
+    <div class="login-box" id="app">
         <div class="login-logo">
             <img src="/img/logo.png" alt="dm-logo">
         </div>
