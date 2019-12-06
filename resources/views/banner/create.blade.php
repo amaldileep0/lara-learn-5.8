@@ -13,20 +13,25 @@
         <form method="post" action="{{route('banner.store')}}" enctype="multipart/form-data">
         	@csrf
             <div class="card-body">
+              @if ($errors->any())
+                <div class="alert alert-danger alert-dismissible">
+                  <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+              @endif
                <div class="form-group">
                   <label for="title">{{ __('Title') }}</label>
                   <input type="text" class="form-control @error('title') is-invalid @enderror" id="title" placeholder="Enter Title" value="{{ old('title') }}" autofocus name="title"> 
-                  @error('title')
-                    <span class="invalid-feedback" role="alert">
-                        <strong>{{ $message }}</strong>
-                    </span> 
-                  @enderror
                </div>
                <div class="form-group">
                   <label for="exampleInputFile">{{ __('Upload Image') }}</label>
                   <div class="input-group">
                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" name="file" id="banner-image">
+                        <input type="file" class="custom-file-input @error('title') is-invalid @enderror" name="file" id="banner-image">
                         <label class="custom-file-label" for="bannerImageInput">{{ __('Choose Image') }}</label>
                      </div>
                   </div>
