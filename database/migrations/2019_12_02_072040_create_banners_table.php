@@ -18,7 +18,7 @@ class CreateBannersTable extends Migration
             $table->string('title', 100);
             $table->string('file', 255);
             $table->integer('order');
-            $table->boolean('active');
+            $table->boolean('active')->default(0);
             $table->unsignedBigInteger('created_by');
             $table->timestamps();
             $table->foreign('created_by')->references('id')->on('users');

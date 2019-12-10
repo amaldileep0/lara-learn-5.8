@@ -22,6 +22,9 @@
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
+     @if(Session::get('flash'))
+            <script type="text/javascript">var flash = '{!! Session::get('flash') !!}'</script>
+        @endif
     <div class="wrapper" id="app">
         <nav class="main-header navbar navbar-expand navbar-dark navbar-indigo">
             <ul class="navbar-nav">

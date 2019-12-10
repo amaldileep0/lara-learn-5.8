@@ -28,12 +28,22 @@
                   <input type="text" class="form-control @error('title') is-invalid @enderror" id="title" placeholder="Enter Title" value="{{ old('title') }}" autofocus name="title"> 
                </div>
                <div class="form-group">
-                  <label for="exampleInputFile">{{ __('Upload Image') }}</label>
+                  <label for="image-input">{{ __('Upload Image') }}</label>
                   <div class="input-group">
                      <div class="custom-file">
                         <input type="file" class="custom-file-input @error('title') is-invalid @enderror" name="file" id="banner-image">
                         <label class="custom-file-label" for="bannerImageInput">{{ __('Choose Image') }}</label>
                      </div>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <label for="title">{{ __('Order') }}</label>
+                  <input type="text" class="form-control @error('order') is-invalid @enderror" id="order" placeholder="Enter Order" value="{{ old('order') }}" name="order"> 
+               </div>
+               <div class="form-group">
+                  <div class="icheck-primary">
+                    <input class="form-check-input @error('active') is-invalid @enderror" type="checkbox" name="active" id="active" {{ old('active') ? 'checked' : '' }}>
+                    <label class="form-check-label" for="active">{{ __('Active') }}</label>
                   </div>
                </div>
             </div>
@@ -48,5 +58,11 @@
 </div>    
 @endsection
 @section('pagescript')
+    <script src="{{ asset('/plugins/bs-custom-file-input/bs-custom-file-input.min.js') }}"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        bsCustomFileInput.init();
+      });
+    </script>
     <script src="{{ asset('js/banner.js') }}"></script>
 @stop

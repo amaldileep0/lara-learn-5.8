@@ -5,7 +5,8 @@ namespace App\Http\Requests;
 use Illuminate\Foundation\Http\FormRequest;
 
 class StoreBanner extends FormRequest
-{
+{  
+
     /**
      * Determine if the user is authorized to make this request.
      *
@@ -25,9 +26,9 @@ class StoreBanner extends FormRequest
     {
         return [
            'title' => 'required|max:150',
-           'file' => [
-                'required'
-           ]
+           'file' => 'required|file|max:5000|mimes:jpeg,png,jpg',
+           'order' => 'required|int',
+           'active' => 'boolean'
         ];
     }
 
@@ -40,7 +41,9 @@ class StoreBanner extends FormRequest
     {
         return [
             'title.required' => ':attribute must not be blank',
-            'file.required' => ':attribute cannot be blank',
+            'order.int' => ':attribute must be an integer',
+            'order.required' => ':attribute must not be blank',
+            'file.required' => ':attribute cannot be blank'
         ];
     }
 
@@ -58,4 +61,5 @@ class StoreBanner extends FormRequest
             'active' => 'Active'
         ];
     }
+
 }
