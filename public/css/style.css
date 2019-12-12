@@ -11721,7 +11721,7 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-[class*='sidebar-light-'] .nav-flat .nav-item .nav-treeview .nav-treeview  {
+[class*='sidebar-light-'] .nav-flat .nav-item .nav-treeview .nav-treeview  {
   border-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -11803,7 +11803,7 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
   color: #343a40;
 }
 
-[class*='sidebar-dark-'] .nav-flat .nav-item .nav-treeview .nav-treeview  {
+[class*='sidebar-dark-'] .nav-flat .nav-item .nav-treeview .nav-treeview  {
   border-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -22019,7 +22019,7 @@ html.maximized-card {
 }
 
 .pace-corner-indicator-primary .pace .pace-activity::after,
-.pace-corner-indicator-primary .pace .pace-activity::before  {
+.pace-corner-indicator-primary .pace .pace-activity::before  {
   border: 5px solid #ffffff;
 }
 
@@ -22150,7 +22150,7 @@ html.maximized-card {
 }
 
 .pace-corner-indicator-secondary .pace .pace-activity::after,
-.pace-corner-indicator-secondary .pace .pace-activity::before  {
+.pace-corner-indicator-secondary .pace .pace-activity::before  {
   border: 5px solid #ffffff;
 }
 
@@ -22281,7 +22281,7 @@ html.maximized-card {
 }
 
 .pace-corner-indicator-success .pace .pace-activity::after,
-.pace-corner-indicator-success .pace .pace-activity::before  {
+.pace-corner-indicator-success .pace .pace-activity::before  {
   border: 5px solid #ffffff;
 }
 
@@ -22412,7 +22412,7 @@ html.maximized-card {
 }
 
 .pace-corner-indicator-info .pace .pace-activity::after,
-.pace-corner-indicator-info .pace .pace-activity::before  {
+.pace-corner-indicator-info .pace .pace-activity::before  {
   border: 5px solid #ffffff;
 }
 
@@ -22543,7 +22543,7 @@ html.maximized-card {
 }
 
 .pace-corner-indicator-warning .pace .pace-activity::after,
-.pace-corner-indicator-warning .pace .pace-activity::before  {
+.pace-corner-indicator-warning .pace .pace-activity::before  {
   border: 5px solid #1F2D3D;
 }
 
@@ -22674,7 +22674,7 @@ html.maximized-card {
 }
 
 .pace-corner-indicator-danger .pace .pace-activity::after,
-.pace-corner-indicator-danger .pace .pace-activity::before  {
+.pace-corner-indicator-danger .pace .pace-activity::before  {
   border: 5px solid #ffffff;
 }
 
@@ -22805,7 +22805,7 @@ html.maximized-card {
 }
 
 .pace-corner-indicator-light .pace .pace-activity::after,
-.pace-corner-indicator-light .pace .pace-activity::before  {
+.pace-corner-indicator-light .pace .pace-activity::before  {
   border: 5px solid #1F2D3D;
 }
 
@@ -22936,7 +22936,7 @@ html.maximized-card {
 }
 
 .pace-corner-indicator-dark .pace .pace-activity::after,
-.pace-corner-indicator-dark .pace .pace-activity::before  {
+.pace-corner-indicator-dark .pace .pace-activity::before  {
   border: 5px solid #ffffff;
 }
 
@@ -23067,7 +23067,7 @@ html.maximized-card {
 }
 
 .pace-corner-indicator-navy .pace .pace-activity::after,
-.pace-corner-indicator-navy .pace .pace-activity::before  {
+.pace-corner-indicator-navy .pace .pace-activity::before  {
   border: 5px solid #ffffff;
 }
 
@@ -23198,7 +23198,7 @@ html.maximized-card {
 }
 
 .pace-corner-indicator-olive .pace .pace-activity::after,
-.pace-corner-indicator-olive .pace .pace-activity::before  {
+.pace-corner-indicator-olive .pace .pace-activity::before  {
   border: 5px solid #ffffff;
 }
 
@@ -23329,7 +23329,7 @@ html.maximized-card {
 }
 
 .pace-corner-indicator-lime .pace .pace-activity::after,
-.pace-corner-indicator-lime .pace .pace-activity::before  {
+.pace-corner-indicator-lime .pace .pace-activity::before  {
   border: 5px solid #1F2D3D;
 }
 
@@ -23460,7 +23460,7 @@ html.maximized-card {
 }
 
 .pace-corner-indicator-fuchsia .pace .pace-activity::after,
-.pace-corner-indicator-fuchsia .pace .pace-activity::before  {
+.pace-corner-indicator-fuchsia .pace .pace-activity::before  {
   border: 5px solid #ffffff;
 }
 
@@ -23591,7 +23591,7 @@ html.maximized-card {
 }
 
 .pace-corner-indicator-maroon .pace .pace-activity::after,
-.pace-corner-indicator-maroon .pace .pace-activity::before  {
+.pace-corner-indicator-maroon .pace .pace-activity::before  {
   border: 5px solid #ffffff;
 }
 
@@ -23722,7 +23722,7 @@ html.maximized-card {
 }
 
 .pace-corner-indicator-blue .pace .pace-activity::after,
-.pace-corner-indicator-blue .pace .pace-activity::before  {
+.pace-corner-indicator-blue .pace .pace-activity::before  {
   border: 5px solid #ffffff;
 }
 
@@ -23853,7 +23853,7 @@ html.maximized-card {
 }
 
 .pace-corner-indicator-indigo .pace .pace-activity::after,
-.pace-corner-indicator-indigo .pace .pace-activity::before  {
+.pace-corner-indicator-indigo .pace .pace-activity::before  {
   border: 5px solid #ffffff;
 }
 
@@ -23984,7 +23984,7 @@ html.maximized-card {
 }
 
 .pace-corner-indicator-purple .pace .pace-activity::after,
-.pace-corner-indicator-purple .pace .pace-activity::before  {
+.pace-corner-indicator-purple .pace .pace-activity::before  {
   border: 5px solid #ffffff;
 }
 
@@ -24115,7 +24115,7 @@ html.maximized-card {
 }
 
 .pace-corner-indicator-pink .pace .pace-activity::after,
-.pace-corner-indicator-pink .pace .pace-activity::before  {
+.pace-corner-indicator-pink .pace .pace-activity::before  {
   border: 5px solid #ffffff;
 }
 
@@ -24246,7 +24246,7 @@ html.maximized-card {
 }
 
 .pace-corner-indicator-red .pace .pace-activity::after,
-.pace-corner-indicator-red .pace .pace-activity::before  {
+.pace-corner-indicator-red .pace .pace-activity::before  {
   border: 5px solid #ffffff;
 }
 
@@ -24377,7 +24377,7 @@ html.maximized-card {
 }
 
 .pace-corner-indicator-orange .pace .pace-activity::after,
-.pace-corner-indicator-orange .pace .pace-activity::before  {
+.pace-corner-indicator-orange .pace .pace-activity::before  {
   border: 5px solid #1F2D3D;
 }
 
@@ -24508,7 +24508,7 @@ html.maximized-card {
 }
 
 .pace-corner-indicator-yellow .pace .pace-activity::after,
-.pace-corner-indicator-yellow .pace .pace-activity::before  {
+.pace-corner-indicator-yellow .pace .pace-activity::before  {
   border: 5px solid #1F2D3D;
 }
 
@@ -24639,7 +24639,7 @@ html.maximized-card {
 }
 
 .pace-corner-indicator-green .pace .pace-activity::after,
-.pace-corner-indicator-green .pace .pace-activity::before  {
+.pace-corner-indicator-green .pace .pace-activity::before  {
   border: 5px solid #ffffff;
 }
 
@@ -24770,7 +24770,7 @@ html.maximized-card {
 }
 
 .pace-corner-indicator-teal .pace .pace-activity::after,
-.pace-corner-indicator-teal .pace .pace-activity::before  {
+.pace-corner-indicator-teal .pace .pace-activity::before  {
   border: 5px solid #ffffff;
 }
 
@@ -24901,7 +24901,7 @@ html.maximized-card {
 }
 
 .pace-corner-indicator-cyan .pace .pace-activity::after,
-.pace-corner-indicator-cyan .pace .pace-activity::before  {
+.pace-corner-indicator-cyan .pace .pace-activity::before  {
   border: 5px solid #ffffff;
 }
 
@@ -25032,7 +25032,7 @@ html.maximized-card {
 }
 
 .pace-corner-indicator-white .pace .pace-activity::after,
-.pace-corner-indicator-white .pace .pace-activity::before  {
+.pace-corner-indicator-white .pace .pace-activity::before  {
   border: 5px solid #1F2D3D;
 }
 
@@ -25163,7 +25163,7 @@ html.maximized-card {
 }
 
 .pace-corner-indicator-gray .pace .pace-activity::after,
-.pace-corner-indicator-gray .pace .pace-activity::before  {
+.pace-corner-indicator-gray .pace .pace-activity::before  {
   border: 5px solid #ffffff;
 }
 
@@ -25294,7 +25294,7 @@ html.maximized-card {
 }
 
 .pace-corner-indicator-gray-dark .pace .pace-activity::after,
-.pace-corner-indicator-gray-dark .pace .pace-activity::before  {
+.pace-corner-indicator-gray-dark .pace .pace-activity::before  {
   border: 5px solid #ffffff;
 }
 
@@ -28450,5 +28450,43 @@ a.text-muted:hover {
 .accent-gray-dark .page-item.disabled .page-link {
   background-color: #ffffff;
   border-color: #dee2e6;
+}
+.alert-minimalist {
+  background-color: rgb(102, 16, 242);
+  border-color: rgb(102, 16, 242);
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+}
+
+.alert-minimalist > [data-notify="title"] {
+  color: rgb(51, 51, 51);
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.alert-minimalist > [data-notify="message"] {
+  font-size: 120%;
+}
+
+/*--------------- 27-02-2018--------------*/
+.border-box{
+  width:100%;
+  float:left;
+  border:1px solid #9B9897;
+  padding:15px 10px;
+  margin-bottom: 20px;
+}
+.border-box span{
+  width:100%;
+  float:left;
+  
+  color:#9B9897;
+}
+.border-box h2{
+  width:100%;
+  float:left;
+  font-size:18px;
+  font-weight:bold;
 }
 /*# sourceMappingURL=adminlte.css.map */

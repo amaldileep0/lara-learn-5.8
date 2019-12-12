@@ -6,6 +6,19 @@
 
 require('./bootstrap');
 
+
+/**
+ * Next we'll load our CSS dependencies.
+ */
+import 'animate.css';
+
+/**
+ * Next lets load our various jQuery driven dependencies. We are using the node
+ * and webpack combo - avoid bower.
+ */
+import 'bootstrap-notify';
+
+
 window.Vue = require('vue');
 
 /**

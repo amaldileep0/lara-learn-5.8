@@ -5,7 +5,10 @@ window.App.Promises = {
     }
 };
 $.ajaxSetup({
-    cache: false
+    cache: false,
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
 });
 window.App.Ajax = {
     request: function() {
@@ -226,5 +229,24 @@ window.App.Ui = {
             return deferred.promise;
 
         }
+    },
+    Notification: {
+        showNotification: function(message) {
+            $.notify(
+                {
+                    message: message
+                },
+                {
+                    delay: 2000,
+                    placement: {from: 'bottom', align: 'right'},
+                    animate: {enter: 'animated fadeInDown', exit: 'animated fadeOutUp'},
+                    type: 'minimalist',
+                    template: '<div data-notify="container" class="col-xs-11 col-sm-3 alert alert-{0}" role="alert">' +
+                        '<span data-notify="title">{1}</span>' +
+                        '<span data-notify="message">{2}</span>' +
+                        '</div>'
+                });
+        },
     }
+
 }

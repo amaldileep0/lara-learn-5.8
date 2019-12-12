@@ -22,9 +22,6 @@
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
-     @if(Session::get('flash'))
-            <script type="text/javascript">var flash = '{!! Session::get('flash') !!}'</script>
-        @endif
     <div class="wrapper" id="app">
         <nav class="main-header navbar navbar-expand navbar-dark navbar-indigo">
             <ul class="navbar-nav">
@@ -105,6 +102,13 @@
     <script src="{{ asset('js/adminlte.js') }}"></script>
     <script src="{{ asset('js/q.min.js') }}"></script>
     <script src="{{ asset('js/base_app.js') }}"></script>
+    <script src="{{ asset('js/bootbox.min.js') }}"></script>
+    @if(Session::get('flash'))
+        <script type="text/javascript">
+            var flash = '{!! Session::get('flash') !!}'
+            window.App.Ui.Notification.showNotification(flash);
+        </script>
+    @endif
     @yield('pagescript')
 </body>
 

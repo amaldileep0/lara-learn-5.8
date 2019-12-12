@@ -27,22 +27,25 @@
                   <label for="title">{{ __('Title') }}</label>
                   <input type="text" class="form-control @error('title') is-invalid @enderror" id="title" placeholder="Enter Title" value="{{ old('title') }}" autofocus name="title"> 
                </div>
-               <div class="form-group">
-                  <label for="image-input">{{ __('Upload Image') }}</label>
-                  <div class="input-group">
-                     <div class="custom-file">
-                        <input type="file" class="custom-file-input @error('title') is-invalid @enderror" name="file" id="banner-image">
-                        <label class="custom-file-label" for="bannerImageInput">{{ __('Choose Image') }}</label>
-                     </div>
-                  </div>
-               </div>
+               <div class="border-box inline-row">
+                <h2>{{ __('Upload Image') }}</h2>
+                 <img id="banner-image-preview" class="product-image-thumb" src="/img/photos.png"/>
+                 <div class="form-group mt-2">
+                    <div class="input-group">
+                       <div class="custom-file">
+                          <input type="file" id="banner-image" class="custom-file-input @error('file') is-invalid @enderror" name="file">
+                          <label class="custom-file-label" for="bannerImageInput">{{ __('Choose Image') }}</label>
+                       </div>
+                    </div>
+                 </div>
+              </div>
                <div class="form-group">
                   <label for="title">{{ __('Order') }}</label>
                   <input type="text" class="form-control @error('order') is-invalid @enderror" id="order" placeholder="Enter Order" value="{{ old('order') }}" name="order"> 
                </div>
                <div class="form-group">
                   <div class="icheck-primary">
-                    <input class="form-check-input @error('active') is-invalid @enderror" type="checkbox" name="active" id="active" {{ old('active') ? 'checked' : '' }}>
+                    <input class="form-check-input @error('active') is-invalid @enderror" type="checkbox" name="active" id="active" value="1" {{ old('active') ? 'checked' : '' }}>
                     <label class="form-check-label" for="active">{{ __('Active') }}</label>
                   </div>
                </div>

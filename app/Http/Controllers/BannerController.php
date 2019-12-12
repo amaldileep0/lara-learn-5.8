@@ -29,8 +29,24 @@ class BannerController extends Controller
      */
     public function index()
     {   
-        $banners = Banner::paginate(5);
-        return view('banner.index', ['banners' => $banners]);
+        if (request()->ajax()) {
+            return datatables()->of(Banner::latest()->with('createdBy')->get())
+                ->addColumn('action', function($data) {
+                    $html = '<a href="/banner/'. $data->id 
+                            .'" class="btn btn-primary btn-sm"> 
+                                <i class="fas fa-folder"></i> View</a>';
+                    $html .= '&nbsp&nbsp';
+                    $html .= '<a href="/banner/'. $data->id 
+                            .'/edit" class="btn btn-info btn-sm"> 
+                                <i class="fas fa-pencil-alt"></i> Edit</a>';
+                    $html .= '&nbsp&nbsp';
+                    $html .= '<button class="btn btn-danger btn-sm btn-banner-del" 
+                              data-id="'.$data->id.'" > <i class="fas fa-trash">
+                              </i> Delete</button>';
+                return $html;
+            })->rawColumns(['action'])->make(true);;
+        }
+        return view('banner.index');
     }
 
     /**
@@ -84,9 +100,10 @@ class BannerController extends Controller
             $banner->file = $filePath;
         }
 
-        $banner->save();
-        return redirect('/banner')->with('success', 'Banner saved successfully!');
-
+        if ($banner->save()) {
+            return redirect('/banner')->with('flash', '<i class="icon fas fa-check"></i> Banner saved successfully');
+        }
+        return redirect('/banner');
     }
 
     /**
@@ -97,7 +114,7 @@ class BannerController extends Controller
      */
     public function show(Banner $banner)
     {
-        //
+        return view('banner.view', ['banner' => $banner]);
     }
 
     /**
@@ -108,7 +125,7 @@ class BannerController extends Controller
      */
     public function edit(Banner $banner)
     {
-        //
+        return view('banner.edit', ['banner' => $banner]);
     }
 
     /**
@@ -118,9 +135,9 @@ class BannerController extends Controller
      * @param  \App\Models\Banner  $banner
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Banner $banner)
+    public function update(StoreBanner $request, Banner $banner)
     {
-        //
+        dd($request);
     }
 
     /**
@@ -129,14 +146,18 @@ class BannerController extends Controller
      * @param  \App\Models\Banner  $banner
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Banner $banner)
+    public function destroy(Request $request, Banner $banner)
     {   
+
         $deleted = Storage::disk('public')->delete($banner->file);
         
-        /*if ($deleted && $banner->delete())
-            return redirect('/banner')->with('success', 'Select banner deleted successfully.');*/
-
-        //return redirect('/banner')->with('error', 'Unable to delete select banner.');  
-
+        if ($deleted && $banner->delete()) {
+            $request->session()->flash('flash', '<i class="icon fas fa-check"></i>Banner deleted successfully');
+            return response('', 204);
+        }
+        
+        $request->session()->flash('flash', '<i class="fas fa-exclamation-triangle"></i>Sorry! We are unable to process your request for deleting the selected banner');
+        
+        return response('', 422);  
     }
 }

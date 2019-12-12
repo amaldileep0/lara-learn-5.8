@@ -7,6 +7,9 @@ use Illuminate\Foundation\Http\FormRequest;
 class StoreBanner extends FormRequest
 {  
 
+    protected $casts = [
+        'active' => 'boolean',
+    ];
     /**
      * Determine if the user is authorized to make this request.
      *
